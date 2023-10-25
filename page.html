@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Refuge pour animaux</title>
+</head>
+<body>
+    <h1>Refuge pour animaux</h1>
+
+    <h2>Formulaire</h2>
+    <form id="animalForm">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="age">Âge:</label>
+        <input type="number" id="age" required><br>
+
+        <label for="type">Type:</label>
+        <input type="range" id="type" min="1" max="2" step="1" value="1">
+        <output for="type" id="typeValue">Chien</output><br>
+
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <h2>Liste des animaux</h2>
+    <ul id="animalList"></ul>
+
+    <h2>Moyennes d'âge</h2>
+    <div id="averageAge"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
